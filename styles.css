@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2%;
+}
+
+.calendar {
+  position: relative;
+  width: 600px;
+  height: 720px; 
+  background-color: #fff;
+  display: flex;
+}
+
+.time-labels {
+  width: 80px;
+  height: 100%;
+  text-align: right;
+  color: #555;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-top: -6px;
+  border: none;
+}
+
+.time-label {
+  height: 30px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.time-label.half-hour {
+  height: 30px;
+  color: #aaa;
+  font-size: 10px;
+}
+
+.events-container {
+  position: absolute;
+  left: 80px;
+  padding: 0 10px;
+  width: 620px;
+  padding: 0 10px;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.event {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #53b596;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.event h4 {
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+.event p {
+  margin: 2px 0 0 0;
+  font-size: 10px;
+  color: #888;
+}
